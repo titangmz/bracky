@@ -4,7 +4,11 @@
   >
     <h3 class="tournament-bracket__round-title">Quarterfinals</h3>
     <ul class="tournament-bracket__list">
-      <game v-for="(game,index) in games" :key="index" :game="game" />
+      <game v-for="(game, index) in value" :key="index" :value="game">
+        <template #game="{ game }">
+          <slot name="game" :game="game" />
+        </template>
+      </game>
     </ul>
   </div>
 </template>
@@ -18,6 +22,6 @@ export default {
   components: {
     game: Game,
   },
-  props: ["games"],
+  props: ["value"],
 };
 </script>

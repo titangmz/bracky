@@ -4,11 +4,13 @@
     <h2>Ice hockey at the 1998 Winter Olympics – Men's tournament</h2>
     <div class="tournament-bracket tournament-bracket--rounded">
       <round
-        v-for="(round,index) in data"
+        v-for="(round, index) in value"
         :key="index"
-        :games="round.games"
-        :title="round.title"
-      />
+        v-model="round.games"
+      >
+        <template #game="{ game }">
+          <slot name="game" :game="game" /> </template
+      ></round>
     </div>
   </div>
 </template>
@@ -22,6 +24,6 @@ export default {
   components: {
     round: Round,
   },
-  props: ["data"],
+  props:['value'],
 };
 </script>
