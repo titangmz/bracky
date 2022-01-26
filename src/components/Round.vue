@@ -2,7 +2,7 @@
   <div
     class="tournament-bracket__round tournament-bracket__round--quarterfinals"
   >
-    <h3 class="tournament-bracket__round-title">Quarterfinals</h3>
+    <!-- <h3 class="tournament-bracket__round-title">Quarterfinals</h3> -->
     <ul class="tournament-bracket__list">
       <game v-for="(game, index) in value" :key="index" :value="game">
         <template #game="{ game }">
