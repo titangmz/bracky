@@ -1,11 +1,12 @@
 <template>
-    <div class="tournament-bracket__round">
-        <h3 class="tournament-bracket__round-title">{{ title || "" }}</h3>
-        <!-- UL is the list and li are matches ( between 2 opponents ) -->
-        <ul class="tournament-bracket__list">
-            <game v-for="game in games" :key="game" :game="game" />
-        </ul>
-    </div>
+  <div
+    class="tournament-bracket__round tournament-bracket__round--quarterfinals"
+  >
+    <h3 class="tournament-bracket__round-title">Quarterfinals</h3>
+    <ul class="tournament-bracket__list">
+      <game v-for="(game,index) in games" :key="index" :game="game" />
+    </ul>
+  </div>
 </template>
 
 
@@ -13,10 +14,10 @@
 import Game from "./Game.vue";
 
 export default {
-    name: "round",
-    components: {
-        'game':Game,
-    },
-    props: ["title", "games"],
+  name: "round",
+  components: {
+    game: Game,
+  },
+  props: ["games"],
 };
 </script>
