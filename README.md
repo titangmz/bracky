@@ -1,4 +1,5 @@
-# brackets
+# Bracky
+Vue tournament brackets
 
 ## Project setup
 ```
