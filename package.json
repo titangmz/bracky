@@ -1,6 +1,6 @@
 {
   "name": "bracky",
-  "version": "0.1.1",
+  "version": "0.1.11",
   "private": false,
   "main": "dist/bracky.common.js",
   "scripts": {
