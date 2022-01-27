@@ -2,23 +2,19 @@
   <div>
     {{ data.teams }}
     {{ data }}
+    <hr>
     <bracket v-model="data">
       <template #game="{ game }">
-        <div>
-          <select v-on:input="setTeam($event, game.player1)" name="cars" id="cars">
-            <option v-for="team in teams" :key="team" :value="team">{{team}}</option>
-          </select>
-          <br />
-          {{ game.player2.name }} - {{ game.player2.score }}
-        </div>
+        {{game}}
       </template>
     </bracket>
   </div>
 </template>
 
 <script>
-import Bracket from "./Bracket";
 
+import Bracket from "./Bracket";
+// import Bracket from '../dist/bracky.common'
 
 const data = [
   //quads

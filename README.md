@@ -73,5 +73,9 @@ export default {
 ```
 
 
+
+
 ## Credits
-Based on “Responsive Tournament Bracket” by Jakub Hájek
+Based on “Responsive Tournament Bracket” by Jakub Hájek:
+
+https://codepen.io/jimmyhayek/embed/yJkdEB?height=563&theme-id=178&slug-hash=yJkdEB&default-tab=result&user=jimmyhayek&embed-version=2&pen-title=Responsive%20Tournament%20Bracket&name=cp_embed_5#css-box
