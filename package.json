@@ -1,7 +1,9 @@
 {
   "name": "bracky",
   "version": "0.1.14",
-  "private": false,
+  "author": "Pedram Parsa <titangmz@gmail.com>",
+  "description": "Vue component for rendering single elemination tournament brackets",
+  "repository": "https://github.com/titangmz/bracky",
   "main": "dist/bracky.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -47,5 +49,11 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "keywords": [
+    "brackets",
+    "tournament",
+    "vuejs"
   ]
+  
 }
