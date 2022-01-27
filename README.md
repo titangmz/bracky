@@ -4,11 +4,12 @@
 Single elimination brackets component for vuejs 
 
 
-- this repo is not fully functional yet
 
+## Demo
 
+![Demo](https://raw.githubusercontent.com/titangmz/bracky/main/docs/1.png)
 
-
+You can style the boxes however you want
 
 ## Usage/Examples
 
