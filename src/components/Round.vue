@@ -25,3 +25,5 @@ export default {
   props: ["value"],
 };
 </script>
+
+<style lang="less" scoped src="../assets/global.less" />

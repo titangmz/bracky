@@ -5,11 +5,6 @@
  */
 
 //
-// GOOGLE FONT
-// ---------------------------
-// @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700&subset=latin-ext");
-
-//
 // VARIABLES
 // ---------------------------
 @breakpoint-xs: 24em;
@@ -19,7 +14,7 @@
 
 //
 // GENERAL RULES
-// ---------------------------
+
 * {
   &,
   &::before,
@@ -28,46 +23,8 @@
   }
 }
 
-html {
-  font-size: 15px;
-
-  @media (min-width: @breakpoint-sm) {
-    font-size: 14px;
-  }
-  @media (min-width: @breakpoint-md) {
-    font-size: 15px;
-  }
-  @media (min-width: @breakpoint-lg) {
-    font-size: 16px;
-  }
-}
-
-body {
-  background-color: #f1f1f1;
-  font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.container {
-  width: 90%;
-  min-width: 18em;
-  margin: 20px auto;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 2em;
+*{
+  direction: ltr !important;
 }
 
 .sr-only {
@@ -242,7 +199,7 @@ h2 {
   display: flex;
   width: 100%;
   background-color: #ffffff;
-  padding: 1em;
+  // padding: 1em;
   border: 1px solid transparent;
   border-radius: 0.1em;
   box-shadow: 0 2px 0 0 #e5e5e5;

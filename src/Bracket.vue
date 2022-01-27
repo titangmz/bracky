@@ -10,7 +10,6 @@
 
 <script>
     import Round from "./components/Round.vue";
-    import './assets/global.less'
 
     export default {
         name: "bracket",
@@ -20,3 +19,6 @@
         props: ["value"],
     };
 </script>
+
+<style lang="less" scoped src="./assets/global.less" />
+ 
