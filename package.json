@@ -1,6 +1,6 @@
 {
   "name": "bracky",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "author": "Pedram Parsa <titangmz@gmail.com>",
   "description": "Vue component for rendering single elemination tournament brackets",
   "repository": "https://github.com/titangmz/bracky",
