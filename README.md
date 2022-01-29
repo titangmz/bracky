@@ -13,6 +13,16 @@ You can style the boxes however you want
 
 ## Usage/Examples
 
+```bash
+yarn add bracky
+```
+or
+
+```bash
+npm install bracky
+
+```
+
 ```javascript
 <Bracket v-model="rounds">
     <template #game="{ game }">
