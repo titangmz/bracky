@@ -1,0 +1,34 @@
+//
+// VARIABLES
+// ---------------------------
+@breakpoint-xs: 24em;
+@breakpoint-sm: 38em;
+@breakpoint-md: 52em;
+@breakpoint-lg: 72em;
+
+//
+// GENERAL RULES
+
+* {
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+* {
+    direction: ltr !important;
+}
+
+//
+// TOURNAMENT BRACKET
+// ---------------------------
+.tournament-bracket {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @breakpoint-sm) {
+        flex-direction: row;
+    }
+}

@@ -1,10 +1,8 @@
 <template>
-    <div class="container">
-        <div class="tournament-bracket tournament-bracket--rounded">
-            <round v-for="(round, index) in value" :key="index" :title="round.title" v-model="round.games">
-                <template #game="{ game }"> <slot name="game" :game="game" /> </template
-            ></round>
-        </div>
+    <div class="tournament-bracket tournament-bracket--rounded">
+        <round v-for="(round, index) in value" :key="index" :title="round.title" v-model="round.games">
+            <template #game="{ game }"> <slot name="game" :game="game" /> </template
+        ></round>
     </div>
 </template>
 
@@ -20,5 +18,4 @@
     };
 </script>
 
-<style lang="less" scoped src="./assets/global.less" />
- 
+<style lang="less" scoped src="./assets/bracket.less" />

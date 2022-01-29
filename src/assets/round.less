@@ -1,0 +1,67 @@
+//
+// VARIABLES
+// ---------------------------
+@breakpoint-xs: 24em;
+@breakpoint-sm: 38em;
+@breakpoint-md: 52em;
+@breakpoint-lg: 72em;
+
+//
+// GENERAL RULES
+
+* {
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+* {
+    direction: ltr !important;
+}
+
+.tournament-bracket__round {
+    display: block;
+    margin-left: -3px;
+    flex: 1;
+}
+
+.tournament-bracket__round-title {
+    color: #9e9e9e;
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+.tournament-bracket__list {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100%;
+    padding-left: 0px !important;
+    min-height: 100%;
+    border-bottom: 1px dashed #e5e5e5;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    transition: padding 0.2s ease-in-out, margin 0.2s ease-in-out;
+
+    @media (max-width: @breakpoint-xs) {
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
+
+    @media (min-width: @breakpoint-sm) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-right: 1px dashed #e5e5e5;
+        border-bottom: 0;
+    }
+
+    .tournament-bracket__round:last-child & {
+        border: 0;
+    }
+}

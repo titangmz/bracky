@@ -18,4 +18,4 @@ export default {
 };
 </script>
 
-<style lang="less" scoped src="../assets/global.less" />
+<style lang="less" scoped src="../assets/game.less" />

@@ -2,7 +2,7 @@
     <div>
         <bracket v-model="data">
             <template #game="{ game }">
-                <div>
+                <div style="min-height:4em">
                   {{ game }}
                 </div>
             </template>
@@ -24,6 +24,7 @@
     const data = [
         //quads
         {
+            title:'Quarter',
             games: [
                 {
                     player1: { id: "1", name: "CP1", winner: true, score: 3 },
@@ -45,6 +46,7 @@
         },
         //Semi finals
         {
+            title:'Quarter',
             games: [
                 {
                     player1: { id: "1", name: "CP1", winner: true, score: 3 },
@@ -58,6 +60,7 @@
         },
         //Final
         {
+            title:'Quarter',
             games: [
                 {
                     player1: { id: "4", name: "CP4", winner: false, score: 2 },
@@ -66,6 +69,7 @@
             ],
         },
         {
+            title:'Quarter',
             games: [
                 {
                     player1: { id: "4", name: "CP4", winner: false, score: 2 },
