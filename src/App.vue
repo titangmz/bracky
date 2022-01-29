@@ -1,11 +1,8 @@
 <template>
     <div>
-        {{ data.teams }}
-        {{ data }}
-        <hr />
         <bracket v-model="data">
             <template #game="{ game }">
-                <div style="background-color:red">
+                <div>
                   {{ game }}
                 </div>
             </template>

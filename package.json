@@ -1,6 +1,6 @@
 {
   "name": "bracky",
-  "version": "0.1.15",
+  "version": "0.2.0",
   "author": "Pedram Parsa <titangmz@gmail.com>",
   "description": "Vue component for rendering single elemination tournament brackets",
   "repository": "https://github.com/titangmz/bracky",
@@ -28,6 +28,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "less": "^4.1.2",
     "less-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
   },
@@ -55,5 +56,4 @@
     "tournament",
     "vuejs"
   ]
-  
 }
