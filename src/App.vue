@@ -68,15 +68,6 @@
                 },
             ],
         },
-        {
-            title:'Quarter',
-            games: [
-                {
-                    player1: { id: "4", name: "CP4", winner: false, score: 2 },
-                    player2: { id: "8", name: "CP8", winner: true, score: 1 },
-                },
-            ],
-        },
     ];
 
     export default {
